@@ -30,12 +30,24 @@ Sara’s friends are Alice, Sam, Clara, Nancy
 As Alice and Bob are friend and so, their mutual friend list is [Sam, Nancy]
 As Sara and Bob are not friend and so, their mutual friend list is empty. (In this case you may exclude them from your output). 
 
+### Input arguments
+/input/soc-LiveJournal1Adj.txt /output 0,1\;20,28193\;1,29826\;6222,19272\;28041,28056
+
 ## Maximum common friends
 Find friend pair(s) whose number of common friends is the maximum in all the pairs. 
+
+### Input arguments
+/input/soc-LiveJournal1Adj.txt /output
 
 ## Mapper join of common friends
 Given any two Users (they are friend) as input, output the list of the names and the date of birth (mm/dd/yyyy) of their mutual friends.
 userdata.txt will be used to get the extra user information and cached/replicated at each mapper.
 
+### Input arguments
+/input/soc-LiveJournal1Adj.txt /output /input/userdata.txt 18666 18668
+
 ## Reducer join of common friends
 For each user print User ID and maximum age of direct friends of this user.
+
+### Input arguments
+/input /output
